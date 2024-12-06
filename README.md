@@ -24,7 +24,11 @@ python src/main.py --comment "pretraining" --name PreBT --records_file records.x
 python src/main.py --comment "finetune for SOC" --name PreBT_SOC_finetuned --records_file SOC_records.xls --data_dir Yourpath\train --epochs 5 --lr 0.001 --d_model 256 --dim_feedforward 512 --num_layers 8 --load_model YourPath\PreBT\checkpoints\model_last.pth --task regression --change_output --batch_size 64 --val_ratio 0.05 --data_class socdataset --norm_from YourPath\PreBT\normalization.pickle --freeze --data_window_len 20
 ```
 
-
+## Test
+:star: Change the corresponding command according to your task.
+```commandline
+python src/main.py --comment "test" --name PreBT_test --data_dir Yourpath\data\SOH  --val_ratio 0 --batch_size 64 --model BBTE --pos_encoding learnable --d_model 256 --dim_feedforward 512 --num_layers 8 --normalization_layer LayerNorm --load_model YourPath\PreBT\checkpoints\model_last.pth --task regression --data_class sohdataset --norm_from YourPath\PreBT\normalization.pickle --test_only testset
+```
 
 ## Data template
 The data should be saved as a CSV file.
