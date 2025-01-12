@@ -1,6 +1,6 @@
 # Pre-trained Battery Transformer (PreBT)
 
-This code is associated with the paper: ["A Lithium Battery General Pre-trained Transformer for Multi-task Computing."](https://github.com/EasinZhang/PreBT) If you find this code useful, please cite it. DOI:
+This code is associated with the paper: ["A Multi-task General Model for Lithium-ion Battery Health Management."](https://github.com/EasinZhang/PreBT) If you find this code useful, please cite it. DOI:
 
 
 > :relaxed: **This paper is currently under review**.
