@@ -32,7 +32,7 @@ python src/main.py --comment "test" --name PreBT_test --data_dir Yourpath\data\S
 
 ## Data template
 The data should be saved as a CSV file.
->[!Note]  'Capacity' means charge throughput. If there are discontinuous time periods within the same CSV file, add a row with the [10000] delimiter between these time periods to separate the discontinuous data
+>[!Note]  'Capacity' means charge throughput. If there are discontinuous time periods within the same CSV file, add a row with the [10000] delimiter between these time periods to separate the discontinuous data.
 
 
 
